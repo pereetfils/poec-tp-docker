@@ -37,7 +37,7 @@ class Test_TVA(unittest.TestCase):
         self.assertEqual(apply_vat(100, 20), 120)
 
     def test_test2(self):
-        self.assertEqual(apply_vat(55.25, 5.5), 58.28874999999999)
+        self.assertEqual(apply_vat(55.25, 5.5), 58.29)
 
 
 

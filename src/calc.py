@@ -20,6 +20,8 @@ def apply_vat(price: float, percent: float):
     
     t = price * (1+percent/100)
 
-    t = "%.2f" % t
+    t = round(t,2)
+
+    #t = "%.2f" % t
 
     return t
