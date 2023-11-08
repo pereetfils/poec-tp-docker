@@ -38,8 +38,7 @@ class Test_TVA(unittest.TestCase):
 
     def test_test2(self):
         self.assertEqual(apply_vat(55.25, 5.5), 58.29)
-
-
+        
 
         #self.assertEqual(apply_vat(0 , 10), 'ValueError: Price ($0.0) is negative ou null')
        # self.assertRaises()
