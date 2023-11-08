@@ -12,6 +12,9 @@ def apply_vat(price: float, percent: float):
     if not isinstance(price , float):             
        raise ValueError(f'Price (${price}) is not a number')
     
+    if not isinstance(percent , float):             
+       raise ValueError(f'la TVA (${percent}) is not a number')
+    
     if price <= 0:
         raise ValueError(f'Price (${price}) is negative ou null')
     
