@@ -3,6 +3,12 @@ import sys
 
 price = sys.argv[1]
 percent= sys.argv[2]
-price=float(price)
-percent= float(percent)
+
+try:
+    price=float(price)
+    percent= float(percent)
+except ValueError:
+    print("erreur ! le prix et la tva doivent etre un foat entre d'index")
+
+
 print (apply_vat(price, percent))
