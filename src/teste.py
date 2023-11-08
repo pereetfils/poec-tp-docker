@@ -21,13 +21,13 @@ def apply_vat(price: float, percent: float):
     return price * (1+percent/100)
 """
 """vous devez tester à minima que la fonction renvoie la bonne valeur pour :
-price = 100, percent = 20,
-price = 55.25, percent = 5.5,
-price = 0, percent = 10,
-price = -10.99, percent = 10,
-price = 'wrong value', percent = 10
-price = 100, percent = -10
-price = 100, percent = 110"""
+test1: price = 100, percent = 20,
+test2: price = 55.25, percent = 5.5,
+test3: price = 0, percent = 10,
+test4: price = -10.99, percent = 10,
+test5: price = 'wrong value', percent = 10
+test6: price = 100, percent = -10
+test7: price = 100, percent = 110"""
 
 class Test_TVA(unittest.TestCase):
     def setUp(self):
