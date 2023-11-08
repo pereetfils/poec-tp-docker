@@ -34,7 +34,7 @@ class Test_TVA(unittest.TestCase):
         pass
 
     def test_test1(self):
-        self.assertEqual(apply_vat(100, 20), 120)
+        self.assertEqual(apply_vat(100, 20), 120.00)
 
     def test_test2(self):
         self.assertEqual(apply_vat(55.25, 5.5), 58.29)
@@ -52,22 +52,18 @@ class Test_TVA(unittest.TestCase):
         with self.assertRaises(ValueError):
             apply_vat(-10.99 , 10)
 
-    def test_test4(self):
+    def test_test5(self):
         with self.assertRaises(ValueError):
             apply_vat('wrong value' , 10)
 
-    def test_test5(self):
+    def test_test6(self):
         with self.assertRaises(ValueError):
             apply_vat(100 , -10)
 
-    
-    def test_test5(self):
-        self.assertEqual(apply_vat('wrong value', 10), ValueError)
-    def test_test5(self):
-        self.assertEqual(apply_vat(100, -10), 'la TVA 110.0) est hors la loi ! out of range')
+  
 
-    def test_test5(self):
-        self.assertEqual(apply_vat(100, 100), 200)
+    def test_test10(self):
+        self.assertEqual(apply_vat(100, 100), 200.00)
 
 
 if __name__ == '__main__':
