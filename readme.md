@@ -23,7 +23,7 @@ prerequis:
         docker build -t {image} .
 
         Pour lancer le programme:
-        docker run -it tptp1 python src/main.py {prix} {TVA}
+        docker run -it {image} python src/main.py {prix} {TVA}
 
         pour lancer la campagne des tests automatisée:
         docker run -it {image} python src/teste.py
